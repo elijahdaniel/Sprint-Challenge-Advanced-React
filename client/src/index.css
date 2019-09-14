@@ -1,13 +1,116 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('https://ak1.ostkcdn.com/images/products/is/images/direct/dcff4605a058dba843392c39913f51cfd9d67450/York-Wallcoverings-RMK2491GM-Women%27s-Soccer-Champion-Peel-and-Stick-Giant-Wall-Decals.jpg');
+  background-position: left bottom;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.dataContainer {
+  width: 1000px;
+  /* background: rgba(156, 39, 176, 0.4); */
+  margin: 0 auto;
+  border-radius: 15px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.playerInfo {
+  background: rgba(210, 79, 145, 0.6);
+  box-shadow: 0px 3px 17px -12px #000;
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playerInfo:hover {
+  background: #faf4ad;
+  transform: scale(1.1);
+  transition: all 1s ease;
+  cursor: crosshair;
+}
+
+.unhover {
+  transform: scale(1);
+  background: rgba(210, 79, 145, 0.6);
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.country {
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.searches {
+  margin-top: 10px;
+}
+
+.card-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.toggle {
+  width: 100px;
+  padding: 10px 0;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  margin: 20px;
+  transition: all 1s ease;
+}
+
+.toggle:hover {
+  opacity: .7;
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+.color {
+  background: rgb(36, 36, 36);
+}
+
+.color .playerInfo {
+  background: rgb(30, 24, 107);
+  color: rgb(168, 168, 168);
+}
+
+.color .playerInfo:hover {
+  background: rgb(22, 18, 78);
+  color: rgb(168, 168, 168);
+}
+
+.color .title {
+  color: rgb(105, 105, 105);
 }
