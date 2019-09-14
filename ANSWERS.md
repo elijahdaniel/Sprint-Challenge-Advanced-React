@@ -6,9 +6,9 @@
 
   1. componentDidMount: Only gets called once after render, updates state and then directs back to render.
 
-  2. render: Renders your JSX onto the webpage.
+  2. render: Renders JSX onto the webpage.
 
-  3. componentDidUpdate: Gets called everytime the component is updated. Takes two params (prevProps, prevState) - props before and after the update
+  3. componentDidUpdate: Gets called every time the component is updated. Takes two params (prevProps, prevState) - props before and after the update
 
 - [ ] What is the purpose of a custom hook?
 
@@ -16,4 +16,4 @@
 
 - [ ] Why is it important to test our apps?
 
-  For reassurance, piece of mind, and to be sure that you're code's output is the expected solution.
+  For reassurance, peace of mind, and to be sure that your code's output is the expected solution.

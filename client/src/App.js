@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import PlayerInfo from './components/PlayerInfo'
 import Toggle from './components/Toggle'
+import Formation from './components/Formation'
+
+// import PlayerInfo from './components/PlayerInfo'
 
 export default class App extends Component {
   state = {
@@ -22,7 +24,19 @@ export default class App extends Component {
           Women's World Cup Players Ranked in Search Interest
         </h1>
         <div className='dataContainer'>
-          <PlayerInfo people={this.state.player} />
+          <div className='card-collection'>
+            {/* <PlayerInfo people={this.state.player} /> */}
+            {this.state.player.map(item => {
+              return (
+                <Formation
+                  name={item.name}
+                  country={item.country}
+                  searches={item.searches}
+                  key={item.id}
+                />
+              )
+            })}
+          </div>
         </div>
       </>
     )
